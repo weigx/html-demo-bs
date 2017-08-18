@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap 实例 - 默认的导航栏</title>
+
+<script src="medium-editor/4.11.1/js/medium-editor.min.js"></script>
+<link rel="stylesheet" href="medium-editor/4.11.1/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
+  <style type="text/css">
+  @media (min-width: 1200px) {width: 1170px;}
+  @media (min-width: 992px) {width: 970px;}
+  @media (min-width: 768px) {width: 750px;}
+  html {
+    background-image: url("images/background.png");
+    overflow-x: hidden;
+  }
+
+
+
+
+
+  </style>
+
+</head>
+<body  >
+
+<div  class="editable">
+<p>medium-editor</p>
+  <p>The dead simple inline editor toolbar.</p><p><span class="highlight animated shake">Try highlighting this text.</span></p>
+</div>
+
+
+<!-- Initialize Quill editor -->
+<script>
+var editor = new MediumEditor('.editable', {
+    toolbar: {
+        /* These are the default options for the toolbar,
+           if nothing is passed this is what is used */
+        allowMultiParagraphSelection: true,
+        buttons: ['bold', 'italic', 'underline', 'anchor', 'h2', 'h3', 'quote'],
+        diffLeft: 0,
+        diffTop: -10,
+        firstButtonClass: 'medium-editor-button-first',
+        lastButtonClass: 'medium-editor-button-last',
+        relativeContainer: null,
+        standardizeSelectionStart: false,
+        static: false,
+        /* options which only apply when static is true */
+        align: 'center',
+        sticky: false,
+        updateOnEmptySelection: false
+    }
+});
+
+</script>
+</body>
+</html>
